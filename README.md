@@ -15,29 +15,38 @@ their feature or bug fix is ready.
 
 ## Very Much Frequently Asked Questions
 
-### How much doge can exist?
-Total of 100,000,000,000 much coins
+### What is the denomination of SBX?
 
-### How get doge?
+Each underlying coin is designated to be worth 1 Billion SBX, and will be
+displayed as such in the user interface. This may change in the future.
+
+### How much SBX can exist?
+Total of 100,000,000,000 times 1 Billion SBX
+
+### How get SBX?
 Scrypt Proof of Work
 
 1 Minute Block Targets, 4 Hour Diff Readjustments
 
 Special reward system: Random block rewards
 
-1-100,000: 0-1,000,000 Stalwartbucks Reward
+1-10,000: 1,000 trillion SBX
 
-100,001 — 200,000: 0-500,000 Stalwartbucks Reward
+10,001-100,000: 100 trillion SBX
 
-200,001 — 300,000: 0-250,000 Stalwartbucks Reward
+100,001-300,000: 50 trillion SBX
 
-300,001 — 400,000: 0-125,000 Stalwartbucks Reward
+300,001-400,000: 25 trillion SBX
 
-400,001 — 500,000: 0-62,500 Stalwartbucks Reward
+400,001-500,000: 10 trillion SBX
 
-500,001 - 600,000: 0-31,250 Stalwartbucks Reward
+500,001-600,000: 5 trillion SBX
 
-600,000+ — 10,000 Reward (flat)
+600,001+: 1 trillion SBX
+
+### Will SBX be premined?
+
+Yes.
 
 ### Wow plz make stalwartbucksd
 

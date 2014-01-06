@@ -841,31 +841,31 @@ int static generateMTRandom(unsigned int s, int range)
 
 int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
 {
-        int64 nSubsidy = 10000 * COIN;
+        int64 nSubsidy = 1000 * COIN;
 
-        if(nHeight < 100000)    
+        if(nHeight < 10000)    
         {
-                nSubsidy = 500000 * COIN;
+                nSubsidy = 1000000 * COIN;
         }
-        else if(nHeight < 200000)      
+        else if(nHeight < 100000)      
         {
-                nSubsidy = 250000 * COIN;
+                nSubsidy = 100000 * COIN;
         }
         else if(nHeight < 300000)      
         {
-                nSubsidy = 125000 * COIN;
+                nSubsidy = 50000 * COIN;
         }
         else if(nHeight < 400000)      
         {
-                nSubsidy = 50000 * COIN;
+                nSubsidy = 25000 * COIN;
         }
         else if(nHeight < 500000)      
         {
-                nSubsidy = 30000 * COIN;
+                nSubsidy = 10000 * COIN;
         }
         else if(nHeight < 600000)      
         {
-                nSubsidy = 15000 * COIN;
+                nSubsidy = 5000 * COIN;
         }
  
     return nSubsidy + nFees;
@@ -2074,9 +2074,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1389028733;
+        block.nTime    = 1389038907;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 149949;
+        block.nNonce   = 0;
 
 
         if (fTestNet)
@@ -2091,7 +2091,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
         assert(block.hashMerkleRoot == uint256("0xb3a3b5182ffd93eb4c3a0529bb9c61500e2831d7e925ccc8323a9dc1f77fa12a"));
 
-if (false && block.GetHash() != hashGenesisBlock)
+if (true && block.GetHash() != hashGenesisBlock)
         {
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
