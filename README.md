@@ -46,7 +46,8 @@ Special reward system: Random block rewards
 
 ### Will SBX be premined?
 
-Yes.
+Yes. This file will be updated with the exact amount premined a few days
+after full public release.
 
 ### Wow plz make stalwartbucksd
 
