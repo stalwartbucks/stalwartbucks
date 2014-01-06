@@ -1,4 +1,4 @@
-TOR SUPPORT IN DOGECOIN
+TOR SUPPORT IN STALWARTBUCKS
 ======================
 
 It is possible to run Stalwartbucks as a Tor hidden service, and connect to such services.

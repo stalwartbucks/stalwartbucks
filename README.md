@@ -1,7 +1,5 @@
-# Stalwartbucks [DOGE, Ð]
+# Stalwartbucks [SBX]
 http://stalwartbucks.com/
-
-![Stalwartbucks](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
 
 ## What is Stalwartbucks? - Such coin
 Stalwartbucks is like Bitcoin, but based on Litecoin, and also much more wow.
