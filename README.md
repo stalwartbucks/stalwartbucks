@@ -63,6 +63,6 @@ after full public release.
 
 ### Such ports
 RPC 22565
-P2P 22566
+P2P 22666
 
 ![](http://dogesay.com/wow//////such/coin)
