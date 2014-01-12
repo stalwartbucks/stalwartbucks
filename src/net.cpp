@@ -489,6 +489,21 @@ CNode* ConnectNode(CAddress addrConnect, const char *pszDest, int64 nTimeout)
     printf("trying connection %s lastseen=%.1fhrs\n",
         pszDest ? pszDest : addrConnect.ToString().c_str(),
         pszDest ? 0 : (double)(GetAdjustedTime() - addrConnect.nTime)/3600.0);
+    
+    // ugly hack to prevent connections to port 22566 (KittehCoin
+    // crosstalk) if we're in a GUI
+    // same problems arise in command line client, but less bad
+    // because we don't have the indefinite "Syncing" message
+#ifdef QT_GUI
+    unsigned short port = addrConnect.GetPort();
+    if (port == 22566 || port == 0) {
+        printf("refusing conn to port %d to avoid KittehCoin crosstalk\n",
+            port);
+        return NULL;
+    } else {
+        printf("port %d is ok\n", port);
+    }
+#endif
 
     // Connect
     SOCKET hSocket;
