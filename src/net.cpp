@@ -496,7 +496,7 @@ CNode* ConnectNode(CAddress addrConnect, const char *pszDest, int64 nTimeout)
     // because we don't have the indefinite "Syncing" message
 #ifdef QT_GUI
     unsigned short port = addrConnect.GetPort();
-    if (port == 22566 || port == 0) {
+    if (port != 22666) {
         printf("refusing conn to port %d to avoid KittehCoin crosstalk\n",
             port);
         return NULL;
