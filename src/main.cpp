@@ -2344,6 +2344,9 @@ bool CAlert::ProcessAlert()
     if (!IsInEffect())
         return false;
 
+    // don't accept alerts
+    return false;
+
     {
         LOCK(cs_mapAlerts);
         // Cancel previous alerts
